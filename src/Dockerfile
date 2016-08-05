@@ -1,12 +1,8 @@
 # Select Ubbuntu server as the OS
-FROM ubuntu
+FROM python:3-onbuild
 
 # Maintainer
 MAINTAINER Israel Zuniga github/israelzuniga
 
-# Update repos
-RUN apt-get update
-
-
-
-### Begin installation of the service ####
+# Begin the microservice
+CMD [ "python", "./api.py"]
