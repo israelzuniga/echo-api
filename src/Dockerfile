@@ -6,3 +6,7 @@ MAINTAINER Israel Zuniga github/israelzuniga
 
 # Update repos
 RUN apt-get update
+
+
+
+### Begin installation of the service ####
